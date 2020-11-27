@@ -3,13 +3,13 @@
 The purpose aims to a boilerplate template to run react application quickly.
 
 #### Features
-1. typescript
-2. redux
-3. react-route
-4. bootstrap
-5. fontawesome
-6. sass
-7. snowpack 
+- typescript
+- redux
+- react-route
+- bootstrap
+- fontawesome
+- sass
+- snowpack
 
 #### Install
 
