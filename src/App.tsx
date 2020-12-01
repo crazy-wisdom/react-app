@@ -19,12 +19,26 @@ const APP = () => {
   const dispatch = useDispatch();
 
   React.useEffect(() => {
-    dispatch({
-      type: 'pages',
-      value: {
-        name: 'your-preferable name'
-      }
-    });
+
+    try {
+      fetch(`${import.meta.env.SNOWPACK_PUBLIC_API_URL}`)
+      .then(res => res.json())
+      .then(
+        (result) => {
+          dispatch({
+            type: 'pages',
+            value: {
+              name: `your-preferable ${result.title}`
+            }
+          });
+        },
+
+        (error) => {
+        }
+      )
+    } catch (error) {
+    }
+
   }, []);
 
 

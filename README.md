@@ -11,6 +11,13 @@ The purpose aims to a boilerplate template to run react application quickly.
 - sass
 - snowpack
 
+
+### Create env files
+```
+cp .env.example .env.local
+cp .env.example .env.test
+```
+
 #### Install
 
 ```sh

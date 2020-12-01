@@ -22,6 +22,7 @@
     "redux": "^4.0.5"
   },
   "devDependencies": {
+    "@snowpack/plugin-dotenv": "^2.0.4",
     "@snowpack/plugin-sass": "^1.1.1",
     "snowpack": "^2.17.1"
   },
