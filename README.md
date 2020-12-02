@@ -10,6 +10,7 @@ The purpose aims to a boilerplate template to run react application quickly.
 - fontawesome
 - sass
 - snowpack
+- jest
 
 
 ### Create env files
