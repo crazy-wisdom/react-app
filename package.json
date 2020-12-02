@@ -9,7 +9,8 @@
   "scripts": {
     "clean": "rm dist/bundle.js",
     "start": "snowpack dev",
-    "build": "snowpack build"
+    "build": "snowpack build",
+    "test": "jest test --verbose"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
@@ -22,8 +23,13 @@
     "redux": "^4.0.5"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "@babel/preset-typescript": "^7.12.7",
+    "@snowpack/plugin-babel": "^2.1.4",
     "@snowpack/plugin-dotenv": "^2.0.4",
     "@snowpack/plugin-sass": "^1.1.1",
+    "jest": "^26.6.3",
     "snowpack": "^2.17.1"
   },
   "repository": {

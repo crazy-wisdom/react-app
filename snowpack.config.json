@@ -5,6 +5,14 @@
   },
   "plugins": [
     "@snowpack/plugin-sass",
-    "@snowpack/plugin-dotenv"
+    "@snowpack/plugin-dotenv",
+    [
+      "@snowpack/plugin-babel",
+      {
+        "input": [".js", ".jsx", ".ts", ".tsx"],
+        "transformOptions": {
+        }
+      }
+    ]
   ]
 }
