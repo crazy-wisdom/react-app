@@ -13,6 +13,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Error from './pages/error';
+import Demo from './pages/demo';
 
 
 const APP = () => {
@@ -44,7 +45,9 @@ const APP = () => {
 
   return (
     <Switch>
+      <Route path={`/demo`} component={Demo} exact />
       <Route component={Error} />
+
     </Switch>
   )
 }
